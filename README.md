@@ -5,4 +5,3 @@ for CSC1120, Data Structures and Graphical Interfaces.
 # Announcements
 
 ## Week 1
-
