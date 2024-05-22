@@ -5,3 +5,6 @@ for CSC1120, Data Structures and Graphical Interfaces.
 # Announcements
 
 ## Week 1
+
+- Lab 1 overview video available
+- In-person in DH311 planned in addition to online

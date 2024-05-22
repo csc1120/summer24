@@ -1,0 +1,9 @@
+8
+Rectangle:   0   0 red     1   1
+Rectangle:  10 -10 blue  100 200
+Rectangle:  30  40 pink  100   2
+Rectangle: -10 -80 black 100  87
+Circle: 0 0 red    1
+Circle: 0 0 green  2
+Circle: 0 0 blue   3
+Circle: 0 0 yellow 4
