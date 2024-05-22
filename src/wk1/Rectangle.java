@@ -1,5 +1,8 @@
 package wk1;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+
 public class Rectangle extends Shape {
     private int height;
     private int width;
@@ -17,5 +20,13 @@ public class Rectangle extends Shape {
     @Override
     public String toString() {
         return "Rectange";
+    }
+
+    @Override
+    public void writeRaw(DataOutputStream out) throws IOException {
+        out.writeChar('R');
+        super.writeRaw(out);
+        out.writeInt(width);
+        out.writeInt(height);
     }
 }

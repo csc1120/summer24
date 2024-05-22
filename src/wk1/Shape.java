@@ -1,5 +1,8 @@
 package wk1;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+
 public abstract class Shape {
     private int x;
     private int y;
@@ -16,5 +19,11 @@ public abstract class Shape {
     }
 
     public abstract double getArea();
+
+    protected void writeRaw(DataOutputStream out) throws IOException {
+        out.writeInt(x);
+        out.writeInt(y);
+        out.writeChars(color);
+    }
 
 }
