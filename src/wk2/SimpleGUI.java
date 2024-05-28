@@ -54,7 +54,7 @@ public class SimpleGUI extends Application {
             } else {
                 clickMe.setEffect(null);
             }
-            handleClickMe2();
+            handleClickMe2(actionEvent);
         }
     }
 }
