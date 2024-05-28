@@ -4,8 +4,12 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
-## Week 1
+## Week 2
+- Assignment grading strategy
+- [How to view lab feedback](https://use.vg/XvMcl0) **PLEASE WATCH**
+- Have meeting 2-3pm Wednesday but can help earlier in the day
 
+## Week 1
 - Lab 1 overview video available **PLEASE WATCH**
 - Lab 1 progress:
   - Before Thursday, should be done with ImageIO `read()` and `readMSOE()`

@@ -15,7 +15,8 @@ import javafx.stage.Stage;
 public class Teenager extends Application {
     private Label response;
     public static final int HEIGHT = 200;
-    public static final int WIDTH = 30;
+    public static final int WIDTH = 300;
+
     @Override
     public void start(Stage stage) {
         response = new Label();
