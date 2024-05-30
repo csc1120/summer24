@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="wk2.ClickMeController" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+    <Label fx:id="label" text="Here is some text that can be manipulated with the button above." />
+    <Button fx:id="button" onAction="#handleClick" text="Click Me!" />
+    <Label text="Here text that can be manipulated with the button above." />
+    <Label text="Here is some manipulated with the button above." />
+    <Label text="that can be manipulated with the button above." />
+</children>
+</VBox>
