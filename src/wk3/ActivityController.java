@@ -2,13 +2,11 @@ package wk3;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.ScrollEvent;
 
 import java.util.Arrays;
+import java.util.Optional;
 
 public class ActivityController {
     @FXML
@@ -22,13 +20,6 @@ public class ActivityController {
 
     @FXML
     private void login(ActionEvent actionEvent) {
-        if (username.getText().length() < password.getText().length()) {
-            status.setText("Success");
-        } else {
-            status.setText("Denied");
-        }
-    }
-    private void login2(ActionEvent actionEvent) {
         char[] usernameCharacters = username.getText().toCharArray();
         char[] passwordCharacters = password.getText().toCharArray();
         Arrays.sort(usernameCharacters);
@@ -42,6 +33,8 @@ public class ActivityController {
 
     @FXML
     private void cancel(ActionEvent actionEvent) {
+        Alert alert = new Alert(Alert.AlertType.ERROR, "Something");
+        alert.showAndWait();
         status.setText("-");
         username.setText("");
         password.setText("");

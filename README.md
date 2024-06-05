@@ -4,6 +4,9 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
+## Week 3
+- No announcements so far.
+
 ## Week 2
 - Assignment grading strategy
 - [How to view lab feedback](https://use.vg/XvMcl0) **PLEASE WATCH**
