@@ -99,7 +99,4 @@ public class FunctionalActivity {
 
 
 
-    public static String[] csvSplit(String line) {
-        return line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)",-1);
-    }
 }
