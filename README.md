@@ -4,6 +4,16 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
+## Week 4
+- Exam I next Thursday (6/20)
+  - Exam will be on paper.
+  - You should not use anything electronic to complete the exam (just to upload it).
+  - PDF of exam will be made available in Canvas at 3pm.
+  - Scans of your answers to all questions must be uploaded in Canvas by 5pm.
+  - You may prepare, in advance, one 8.5" x 11" sheet of paper with reference material.
+  - Your prepared sheet is your sole reference material during the exam.
+
+
 ## Week 3
 - No announcements so far.
 

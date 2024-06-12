@@ -8,6 +8,13 @@ import java.util.List;
 
 public class Crashes {
     public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("Help");
+        list.add("me");
+        list.add("eat");
+        String old = list.set(2, "sing");
+    }
+    public static void main2(String[] args) {
         Path path = Path.of("data/Motor_Vehicle_Collisions_-_Crashes.csv");
         try {
             List<String> lines = Files.readAllLines(path);
