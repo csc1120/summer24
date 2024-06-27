@@ -4,6 +4,9 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
+## Week 6
+- No class on July 4
+
 ## Week 4
 - Exam I next Thursday (6/20)
   - Exam will be on paper.

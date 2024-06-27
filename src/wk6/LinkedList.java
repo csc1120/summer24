@@ -1,5 +1,7 @@
 package wk6;
 
+import wk4.ArrayList;
+
 import java.util.*;
 
 public class LinkedList<E> implements List<E> {
@@ -146,7 +148,30 @@ public class LinkedList<E> implements List<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new IteratorImp();
+    }
+
+    private class IteratorImp implements Iterator<E> {
+        private Node<E> walker;
+
+        private IteratorImp() {
+            walker = head;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return walker != null;
+        }
+
+        @Override
+        public E next() {
+            if (walker == null) {
+                throw new NoSuchElementException();
+            }
+            E valueToReturn = walker.value;
+            walker = walker.next;
+            return valueToReturn;
+        }
     }
 
     @Override
