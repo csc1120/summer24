@@ -108,7 +108,7 @@ class ListTest {
         list.add("two");
         list.add("three");
         list.set(0, "1");
-        assertEquals("1", list.get(0));
+        assertEquals("1", list.get(0), "Set on first element failed");
         list.set(2, "3");
         assertEquals("3", list.get(2));
         list.set(2, null);

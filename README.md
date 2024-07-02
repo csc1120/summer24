@@ -4,7 +4,7 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
-## Week 6
+## Week 7
 - No class on July 4
 
 ## Week 4
