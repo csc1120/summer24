@@ -4,6 +4,11 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
+## Week 8
+- All about Recursion, Binary Search, and Binary Search Trees
+- Next week is exam week - I'll be in Baltimore so no in-person class
+- `MapTest.java` class in Lab 7 will not compile. If it is there, update your project from GitHub
+
 ## Week 7
 - No class on July 4
 
