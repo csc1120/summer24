@@ -4,6 +4,11 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
+## Week 9
+- Practice exam posted for review tomorrow.
+- Once completed, feel free to watch the video with my solutions
+- Exam on Thursday - available at 3pm, upload solutions by 5pm
+
 ## Week 8
 - All about Recursion, Binary Search, and Binary Search Trees
 - Next week is exam week - I'll be in Baltimore so no in-person class

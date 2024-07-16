@@ -122,7 +122,21 @@ public class LinkedList<E> implements List<E> {
 
     @Override
     public E set(int index, E element) {
-        return null;
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException("should put stuff here");
+        }
+        return set(head, index, element);
+    }
+
+    private E set(Node<E> walker, int index, E element) {
+        E returnValue = null;
+        if (index == 0) {
+            returnValue = walker.value;
+            walker.value = element;
+        } else {
+            returnValue = set(walker.next, index - 1, element);
+        }
+        return returnValue;
     }
 
     @Override

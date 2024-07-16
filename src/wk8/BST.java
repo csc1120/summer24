@@ -3,6 +3,7 @@ package wk8;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.function.Consumer;
 
 public class BST implements Set<String> {
 
@@ -42,6 +43,42 @@ public class BST implements Set<String> {
             return contains(subroot.lKid, target);
         } else {
             return contains(subroot.rKid, target);
+        }
+    }
+
+    public void preOrder(Consumer<String> consumer) {
+        preOrder(consumer, root);
+    }
+
+    public void postOrder(Consumer<String> consumer) {
+        postOrder(consumer, root);
+    }
+
+    public void inOrder(Consumer<String> consumer) {
+        inOrder(consumer, root);
+    }
+
+    private void inOrder(Consumer<String> consumer, Node subroot) {
+        if (subroot != null) {
+            inOrder(consumer, subroot.lKid);
+            consumer.accept(subroot.value);
+            inOrder(consumer, subroot.rKid);
+        }
+    }
+
+    private void preOrder(Consumer<String> consumer, Node subroot) {
+        if (subroot != null) {
+            consumer.accept(subroot.value);
+            preOrder(consumer, subroot.lKid);
+            preOrder(consumer, subroot.rKid);
+        }
+    }
+
+    private void postOrder(Consumer<String> consumer, Node subroot) {
+        if (subroot != null) {
+            postOrder(consumer, subroot.lKid);
+            postOrder(consumer, subroot.rKid);
+            consumer.accept(subroot.value);
         }
     }
 

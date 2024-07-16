@@ -7,7 +7,7 @@ public class Driver {
         tree.add("AJ");
         tree.add("MB");
         tree.add("SM");
-        System.out.println(tree.contains("MB"));
+        tree.inOrder(s -> System.out.println(s));
     }
 
     public static void main2(String[] args) {
