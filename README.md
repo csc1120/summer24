@@ -4,6 +4,11 @@ for CSC1120, Data Structures and Graphical Interfaces.
 
 # Announcements
 
+## Week 10
+- Two more weeks of class after this week.
+- Lab 9 begins this week and lab 10 next week.
+- Final exam is Tuesday of the following week (August 13)
+
 ## Week 9
 - Practice exam posted for review tomorrow.
 - Once completed, feel free to watch the video with my solutions
