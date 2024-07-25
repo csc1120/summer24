@@ -9,6 +9,7 @@ import java.util.TreeMap;
 public class Driver {
     public static void main(String[] ignored) {
         Set<String> words = new HashTable<>();
+        "Upset".hashCode();
         words.add("Upset");
         words.add("You're");
         words.add("gazebo");

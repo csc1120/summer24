@@ -14,6 +14,21 @@ public abstract class Shape {
         this.color = color;
     }
 
+    @Override
+    public boolean equals(Object shape) {
+        boolean equal = false;
+        if (shape instanceof Shape) {
+            Shape shp = (Shape) shape;
+            equal = this.x == shp.x && this.y == shp.y && this.color.equals(shp.color);
+        }
+        return equal;
+    }
+
+    @Override
+    public int hashCode() {
+        return color.hashCode() + 3 * x + y;
+    }
+
     public Shape() {
         this(0, 0, "black");
     }
