@@ -9,11 +9,18 @@ public class BST implements Set<String> {
 
     private class Node {
         String value;
+        // TODO update rest of BST code to manage parent reference
+        Node parent;
         Node lKid;
         Node rKid;
 
-        Node(String value) {
+        Node(String value, Node parent) {
             this.value = value;
+            this.parent = parent;
+        }
+
+        Node(String value) {
+            this(value, null);
         }
     }
 
@@ -21,6 +28,49 @@ public class BST implements Set<String> {
 
     public BST() {
         root = null;
+    }
+
+    /*
+
+     */
+    private Node rightRotate(Node C) {
+        Node B = C.lKid;
+        Node y = B.rKid;
+        Node parent = C.parent;
+        B.parent = parent;
+        C.lKid = y;
+        B.rKid = C;
+        if (y != null) {
+            y.parent = C;
+        }
+        C.parent = B;
+        if (parent != null) {
+            if (parent.rKid == C) {
+                parent.rKid = B;
+            } else {
+                parent.lKid = B;
+            }
+        }
+        return B;
+    }
+
+    private Node leftRotate(Node A) {
+        Node B = A.rKid;
+        Node parent = A.parent;
+        Node x = B.lKid;
+        A.parent = B;
+        B.lKid = A;
+        A.lKid = x;
+        if (x != null) {
+            x.parent = A;
+        }
+        B.parent = parent;
+        if(parent.lKid == A){
+            parent.lKid = B;
+        } else {
+            parent.rKid = B;
+        }
+        return B;
     }
 
     @Override
